@@ -62,7 +62,10 @@ def main():
         state_dict = state_dict['state_dict']
         model.load_state_dict(state_dict)
     else:
-        model.module.load_state_dict(state_dict)
+        # print('state_dict = ')
+        # print(state_dict)
+        # model.module.load_state_dict(state_dict)
+        model.load_state_dict(state_dict)
 
     dataset_type = get_dataset(config)
 
