@@ -104,7 +104,8 @@ venv.bak/
 .mypy_cache/
 
 # cython generated cpp
-data
+data/*/images/*/*.png
+data/*/images/*/*.pts
 .vscode
 .idea
 .DS_Store
